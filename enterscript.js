@@ -2,8 +2,8 @@ const inputs = document.querySelectorAll('input');
 
 inputs.forEach((input, index)=>{
     input.addEventListener('keyup', ()=>{
-        if(input.value.length === 1 && index < inputs.length-1){
-            inputs[index + 1].focus();
+        if(input.value.length === 10 && index < inputs.length-1){
+            inputs[index + 10].focus();
         }
     })
     input.addEventListener('keydown', (e)=>{
