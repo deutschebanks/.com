@@ -1,0 +1,63 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.select-menu{
+    width: 330px;
+    margin: 140px auto;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 18px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 10px 10px 5px rgb(77, 81, 83);
+    margin-top: -30%;
+    margin-bottom: -30%;
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 35%;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+    margin-bottom: -30%;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 28px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 24px;
+    color: #333;
+}
+

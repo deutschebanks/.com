@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEUTSCHE BANK</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="toggle-sidebar">
+     <aside>
+      <div class="header44">
+        <div class="container44">
+          <div class="navbar">
+            <img src="images/germany_logo.png" width="70px" height="70px">
+           </div>
+        </div>
+      </div>
+        <div class="tabs">
+          <div class="tab active">
+            <a href="dashboard.html" class="item">
+              <i data-lucide="layout-dashboard"></i>
+              <h3>ARMATURENBRETT</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="message-circle"></i>
+              <h3>NACHRICHTEN</h3>
+              <div class="count">9+</div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="scroll-text"></i>
+              <h3>RECHNUNGEN</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="wallet"></i>
+              <h3>GELDBÖRSE</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="chart-column-big"></i>
+              <h3>ANALYTIK</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="#" class="item">
+              <i data-lucide="monitor-dot"></i>
+              <h3>MEINE AKTIVITÄTEN</h3>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="index.html" class="item">
+              <i data-lucide="log-out"></i>
+              <h3>ABMELDEN</h3>
+            </a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="item-tabs">
+            <div class="item-tab">
+              <i data-lucide="hand-helping"></i>
+              <h3>HILFE ERHALTEN</h3>
+            </div>
+            <div class="item-tab" id="theme-switch">
+              <i data-lucide="sun-moon"></i>
+              <h3>THEMA</h3>
+            </div>
+          </div>
+
+          <div class="user">
+            <div class="profile">
+              <img src="images/profile.jpg" alt="">
+            </div>
+            <div class="details">
+              <h4 class="name">SERHII DIX</h4>
+              <P class="MUTED">BENUTZER</P>
+            </div>
+          </div>
+        </div>
+     </aside>
+     <main>
+      <nav>
+        <div class="header44">
+          <div class="container44">
+            <div class="navbar">
+              <img src="images/germany_logo.png" width="70px" height="70px">
+             </div>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="SEARCH HISTORY">
+          <div class="icon-wrapper">
+            <i data-lucide="search"></i>
+          </div>
+        </div>
+        <div class="user">
+          <div class="icon-wrapper">
+            <i data-lucide="bell-ring"></i>
+          </div>
+          <div class="profile">
+            <img src="images/profile.jpg" alt="">
+          </div>
+          <label for="toggle-sidebar" class="rounded-icon-btn
+          menu-btn">
+            <i data-lucide="logs"></i>
+          </label>
+        </div>
+      </nav>
+      <section class="container">
+        <div class="column">
+          <div class="cash-flow">
+            <div class="cash-flow-header">
+              <h2 class="title">ANALYTIK</h2>
+              <div class="row round-btns">
+                <div class="rounded-icon-btn">
+                  <i data-lucide="trending-up" class="icon"></i>
+                </div>
+                <div class="rounded-icon-btn">
+                  <i data-lucide="Chart-column-stacked" class="icon"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row trend-report">
+              <div class="rounded-icon-btn btn-primary">
+                <i data-lucide="trending-up" class="icon"></i>
+              </div>
+              <h3>ERSPARNISSE</h3>
+                <i data-lucide="trending-up" class="icon primary"></i>
+                <p class="success">+2.03%</p>
+              </div>
+              <canvas id="myChart" style="width:100%; height: 100%;">
+              </canvas>
+            </div>
+          </div>
+          <div class="statistics-grid">
+            <div class="statistics">
+              <h2 class="title">STATISTIKEN</h2>
+              <div class="boxes">
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="git-branch-plus" class="icon danger"></i>
+                  </div>
+                  <div>
+                    <h4>357K</h4>
+                    <p class="muted">BENUTZERVERTRAUEN</p>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="flag" class="icon primary"></i>
+                  </div>
+                  <div>
+                    <h4>20 LÄNDER</h4>
+                    <p class="muted">GLOBALE REICHWEITE</p>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="circle-dollar-sign" class="icon success"></i>
+                  </div>
+                  <div>
+                    <h4>€1.3m</h4>
+                    <p class="muted">TRANSAKTIONEN</p>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="star" class="icon warning"></i>
+                  </div>
+                  <div>
+                    <h4>3K</h4>
+                    <p class="muted">BEWERTUNGEN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-history">
+              <div class="row contact-history-header">
+                <h2 class="title">KONTAKTGESCHICHTE</h2>
+                <div class="row">
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="pencil" class="icon"></i>
+                  </div>
+                  <div class="rounded-icon-btn">
+                    <i data-lucide="search" class="icon"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="muted">25 NEUER KONTAKT HINZUFÜGT</p>
+              <div class="profile-container">
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/woman.png" alt="">
+                  </div>
+                  <div>
+                    <h3>IDA</h3>
+                    <p class="muted">€25,000</p>
+                  </div>
+                  <div>
+                    <h3>07-Aug-2024</h3>
+                    <p class="muted">TRANSFER TO</p>
+                  </div>
+                  <div>
+                    <h3>S68746093 ALAT</h3>
+                    <p class="muted">USSD/PAYMENT </p>
+                  </div>
+                </div>
+
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/male.png" alt="">
+                  </div>
+                  <div>
+                    <h3>SAMUEL</h3>
+                    <p class="muted">€40,000</p>
+                  </div>
+                  <div>
+                    <h3>07-Aug-2024</h3>
+                    <p class="muted">CREDITED from</p>
+                  </div>
+                  <div>
+                    <h3>S69855530  COMM</h3>
+                    <p class="muted">USSD/UNION </p>
+                  </div>
+                </div>
+
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/woman.png" alt="">
+                  </div>
+                  <div>
+                    <h3>LINDA</h3>
+                    <p class="muted">€70,500</p>
+                  </div>
+                  <div>
+                    <h3>07-Aug-2024</h3>
+                    <p class="muted">Transfer from</p>
+                  </div>
+                  <div>
+                    <h3>S70007158 NIP</h3>
+                    <p class="muted">USSD/UNION </p>
+                  </div>
+                </div>
+
+                <div class="row user">
+                  <div class="profile">
+                    <img src="images/male.png" alt="">
+                  </div>
+                  <div>
+                    <h3>JAMES</h3>
+                    <p class="muted">€120,000</p>
+                  </div>
+                  <div>
+                    <h3>07-Aug-2024</h3>
+                    <p class="muted">Transfer from</p>
+                  </div>
+                  <div>
+                    <h3>S68709711 NIP</h3>
+                    <p class="muted">USSD/UNION </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="transactions">
+             <h2 class="title">LETZTE TRANSAKTIONEN</h2>
+             <table>
+              <tbody></tbody>
+             </table>
+           </div>
+        </div>
+        <div class="transactions">
+          <div class="footer">
+            <div class="footer-col-1">
+              <h2>Laden Sie unsere APP herunter</h2>
+              <p>Laden Sie die App für Android- und iOS-Mobiltelefone herunter</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+              </div>
+              <div class="app-logos">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/Germany_white.png">
+              <p>Deutsche Bank, N.A. Mitglied der FDIC.</p>
+            </div>
+            <div class="footer-col-3">
+              <h2>Kontaktieren Sie uns</h2>
+              <ul>
+                <li>Standorte</li>
+                <li>Hilfe & Unterstützung</li>
+                <li>Privatsphäre</li>
+                <li>Sicherheit</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h2>Verbinden Sie sich mit uns</h2>
+              <ul>
+                <li>auf facebook.</li>
+                <li>Instagram</li>
+                <li>Þjórsárdalur</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+          <p class="CopyRight©">© 2024 Deutsche Bank Corporation. Alle Rechte vorbehalten.</p>
+         </div>
+      </section>
+     </main>
+     <script src="https://unpkg.com/lucide@latest"></script>
+   <script>
+     lucide.createIcons();
+   </script>
+  <!------------ CHARTJS CDN--------->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!------------ js file--------->
+   <script src="main.js"></script>
+   <script>
+    let popup1= document.getElementById("popup1");
+    function openpopup1(){
+      popup1.classList.add("open-popup1");
+    }
+    function closepopup1(){
+      popup1.classList.remove("open-popup1");
+    }
+  </script>
+
+   <script>
+    $(document).ready(function(){
+      $('.counter').counterUp({
+        delay: 30,
+        time: 120000
+      });
+    });
+    </script>
+    <script src="script.js"></script> 
+  </body>
+</html>
